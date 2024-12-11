@@ -1,0 +1,74 @@
+body{
+    background-color: #fffbf2;
+}
+
+.btn-icon{
+    margin-right: 10px;
+}
+
+.main-text-box{
+    display: flex;
+    background-image: url('https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    grid-template-columns: repeat(2,1fr) ;
+}
+
+
+@media(width <= 1200px){
+    .main-text-box{
+        display: grid;
+        grid-template-columns: auto;
+        height: 40vh;
+
+    }
+}
+
+@media(width <= 576px){
+    .main-text-box{
+        display: grid;
+        grid-template-columns: auto;
+        height: 30vh;
+
+    }
+
+    .main-text,.title-text{
+        text-align: center;
+    }
+
+    .main-text,.description-text{
+        text-align: center;
+    }    
+
+}
+
+.card-menu{
+    display: flex;
+    width: auto;
+}
+
+.card{
+    height: auto;
+    flex: 1;
+    transition: flex 0.7s;
+}
+
+.card:hover {
+    flex: 3;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-style{
+    border: 30px solid #87a79c;
+}
+
+.footer-box{
+    background-color: #87a79c;
+}
