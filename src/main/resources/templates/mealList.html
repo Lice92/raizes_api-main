@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Produtos</title>
-    <link rel="stylesheet" th:href="@{css/style.css}">
+    <title>Lista de Refeições</title>
+    <!-- Link do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>Lista de Refeições</h1>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}"><img th:src="@{/src/main/resources/static/assets/desktop/raiz_e_folha_logo_menor2.jpg}"
+                    alt="Logo da Raiz & Folha"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
 
-        <table>
-            <thead>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Lista de Refeições</h1>
+
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
@@ -33,8 +45,16 @@
             </tbody>
         </table>
 
-        <a th:href="@{/meal}">Cadastrar Novo Produto</a>
+        <!-- Link para cadastro de novo produto -->
+        <a th:href="@{/meal}" class="btn btn-primary mt-3">Cadastrar Novo Produto</a>
     </div>
 
+    <footer class="text-center bg-black text-bg-dark fixed-bottom">
+        <p class="card-text py-3">2024 <i class="bi bi-c-circle"></i> Desenvolido por Aluno | Projeto fictício sem fins
+            comerciais.</p>
+    </footer>
+
+    <!-- Link dos scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
