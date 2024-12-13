@@ -38,9 +38,9 @@
                                 Cardápio
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Cardápio Fit</a></li>
-                                <li><a class="dropdown-item" href="#">Cardápio Vegano</a></li>
-                                <li><a class="dropdown-item" href="#">Cardápio Vegetariano</a></li>
+                                <li><a class="dropdown-item" th:href="@{meal/mealList}">Cardápio Fit</a></li>
+                                <li><a class="dropdown-item" th:href="@{meal/mealList}">Cardápio Vegano</a></li>
+                                <li><a class="dropdown-item" th:href="@{meal/mealList}">Cardápio Vegetariano</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -132,7 +132,7 @@
                             <p class="card-text my-3">
                                 Refeições leves e balanceadas feitas com ingredientes frescos e nutritivos. Nossos pratos incluem saladas, proteínas magras e opções saudáveis para manter o equilíbrio e o sabor.
                             </p>
-                            <a href="#" class="btn btn-primary rounded-0 border-0 my-3">
+                            <a th:href="@{meal/mealList}" class="btn btn-primary rounded-0 border-0 my-3">
                                 <i class="bi bi-journal-text btn-icon"></i>Ver mais
                             </a>
                         </div>
@@ -148,7 +148,7 @@
                             <p class="card-text my-3">
                                 Pratos criados com vegetais frescos, grãos integrais e proteínas vegetais. Uma combinação perfeita de sabores, cores e texturas para uma refeição saudável e saborosa.
                             </p>
-                            <a href="#" class="btn btn-primary rounded-0 border-0 my-3">
+                            <a th:href="@{meal/mealList}" class="btn btn-primary rounded-0 border-0 my-3">
                                 <i class="bi bi-journal-text btn-icon"></i>Ver mais
                             </a>
                         </div>
@@ -164,7 +164,7 @@
                             <p class="card-text my-3">
                                 Opções deliciosas feitas exclusivamente com ingredientes de origem vegetal. Uma seleção criativa, saudável e nutritiva que respeita o meio ambiente, a vida animal e promove saúde.
                             </p>
-                            <a href="#" class="btn btn-primary rounded-0 border-0 my-3">
+                            <a th:href="@{meal/mealList}" class="btn btn-primary rounded-0 border-0 my-3">
                                 <i class="bi bi-journal-text btn-icon"></i>Ver mais
                             </a>
                         </div>

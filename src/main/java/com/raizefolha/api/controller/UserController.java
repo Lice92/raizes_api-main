@@ -29,10 +29,15 @@ public class UserController {
         return "redirect:/usuario";
     }
 
+    // Método para a exibição da Página de usuários cadastradas
 
+    @GetMapping("/userList")
+    public String exibirListaUsuario(Model model){
 
+        model.addAttribute("usuarios", repository.findAll());
+        return "userList";
 
-
+    }
     
       // @GetMapping("/listar")
     // public List <UserModel> userList () {
